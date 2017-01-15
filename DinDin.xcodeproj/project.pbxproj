@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACC2FD951E2AAD9C00AEAF59 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD941E2AAD9C00AEAF59 /* SetupViewController.swift */; };
+		ACC2FD971E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD961E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift */; };
+		ACC2FD991E2ABF3B00AEAF59 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD981E2ABF3B00AEAF59 /* ChartData.swift */; };
+		ACC2FD9B1E2AC2BF00AEAF59 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD9A1E2AC2BF00AEAF59 /* FirebaseController.swift */; };
+		ACC2FD9D1E2AC80300AEAF59 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD9C1E2AC80300AEAF59 /* TextFieldTableViewCell.swift */; };
 		ACE1A80D1E28723E006C5004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A80C1E28723E006C5004 /* AppDelegate.swift */; };
 		ACE1A8141E28723E006C5004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE1A8131E28723E006C5004 /* Assets.xcassets */; };
 		ACE1A8171E28723E006C5004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE1A8151E28723E006C5004 /* LaunchScreen.storyboard */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACC2FD941E2AAD9C00AEAF59 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		ACC2FD961E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupGroupsTableViewController.swift; sourceTree = "<group>"; };
+		ACC2FD981E2ABF3B00AEAF59 /* ChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		ACC2FD9A1E2AC2BF00AEAF59 /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		ACC2FD9C1E2AC80300AEAF59 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		ACE1A8091E28723E006C5004 /* DinDin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinDin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE1A80C1E28723E006C5004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACE1A8131E28723E006C5004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				ACE1A83A1E287324006C5004 /* Main.storyboard */,
+				ACC2FD981E2ABF3B00AEAF59 /* ChartData.swift */,
+				ACC2FD9A1E2AC2BF00AEAF59 /* FirebaseController.swift */,
+				ACC2FD9C1E2AC80300AEAF59 /* TextFieldTableViewCell.swift */,
+				ACC2FD961E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift */,
+				ACC2FD941E2AAD9C00AEAF59 /* SetupViewController.swift */,
 				ACE1A83E1E288A74006C5004 /* ViewController.swift */,
 				ACE1A80C1E28723E006C5004 /* AppDelegate.swift */,
 				ACE1A8131E28723E006C5004 /* Assets.xcassets */,
@@ -262,8 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC2FD9B1E2AC2BF00AEAF59 /* FirebaseController.swift in Sources */,
 				ACE1A83F1E288A74006C5004 /* ViewController.swift in Sources */,
+				ACC2FD9D1E2AC80300AEAF59 /* TextFieldTableViewCell.swift in Sources */,
+				ACC2FD991E2ABF3B00AEAF59 /* ChartData.swift in Sources */,
+				ACC2FD951E2AAD9C00AEAF59 /* SetupViewController.swift in Sources */,
 				ACE1A80D1E28723E006C5004 /* AppDelegate.swift in Sources */,
+				ACC2FD971E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

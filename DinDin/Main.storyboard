@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VJq-Ki-8hb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -30,18 +30,18 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a3I-Yq-AOl" id="bBL-tD-oxK">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Inner Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AbL-2B-MBX">
-                                                    <rect key="frame" x="15" y="12" width="90.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="11" width="91" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Outer Group" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Bi-8e-kXi">
-                                                    <rect key="frame" x="264.5" y="12" width="95.5" height="20.5"/>
+                                                    <rect key="frame" x="264" y="11" width="96" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -71,16 +71,17 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="VA9-qf-R9Y" id="5cH-HX-nr6"/>
+                        <segue destination="TkM-up-DnJ" kind="presentation" id="RUb-xh-mJu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1879.2" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--Setup View Controller-->
         <scene sceneID="7zH-z5-Snu">
             <objects>
-                <viewController id="TkM-up-DnJ" sceneMemberID="viewController">
+                <viewController id="TkM-up-DnJ" customClass="SetupViewController" customModule="DinDin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K93-8G-Ixf"/>
                         <viewControllerLayoutGuide type="bottom" id="Pcj-F9-TM5"/>
@@ -114,6 +115,9 @@
                                         <state key="normal" title="Create!">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="TkM-up-DnJ" eventType="touchUpInside" id="6JW-PS-3Db"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -126,6 +130,9 @@
                                     <segment title="New Chart"/>
                                     <segment title="Enter Code"/>
                                 </segments>
+                                <connections>
+                                    <action selector="SwitcherChanged:" destination="TkM-up-DnJ" eventType="valueChanged" id="TFW-bx-G6E"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,15 +146,21 @@
                             <constraint firstAttribute="trailingMargin" secondItem="3mx-Ra-G6o" secondAttribute="trailing" constant="18" id="ozU-LS-NZS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TitleLabel" destination="2Ig-af-AFn" id="YjZ-zn-u9l"/>
+                        <outlet property="groupNumberTextFiled" destination="EVO-QF-RKd" id="SZI-7E-bbb"/>
+                        <outlet property="nextButton" destination="Ugs-1m-2by" id="aEW-BB-Aas"/>
+                        <segue destination="bk4-mq-0TG" kind="show" identifier="showSetupTableViewController" id="KkB-Yk-z1A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QfJ-C9-Fx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2218.4000000000001" y="122.78860569715144"/>
+            <point key="canvasLocation" x="3454" y="123"/>
         </scene>
-        <!--Outer Group-->
+        <!--Inner Group-->
         <scene sceneID="IZY-x6-rjD">
             <objects>
-                <viewController id="QDF-Kc-ZHT" sceneMemberID="viewController">
+                <viewController id="QDF-Kc-ZHT" customClass="SetupGroupsTableViewController" customModule="DinDin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B8u-OR-B7j"/>
                         <viewControllerLayoutGuide type="bottom" id="f6U-XN-fqc"/>
@@ -160,7 +173,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="oei-lp-Bda">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextFieldCell" id="oei-lp-Bda" customClass="TextFieldTableViewCell" customModule="DinDin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oei-lp-Bda" id="HLQ-7T-JLU">
@@ -173,9 +186,15 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="QDF-Kc-ZHT" id="Yw1-KO-LfC"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="9cQ-LU-le7" id="NYc-fE-irZ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -188,14 +207,26 @@
                             <constraint firstItem="f6U-XN-fqc" firstAttribute="top" secondItem="6uo-gv-WzD" secondAttribute="bottom" id="Xud-da-BkU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Outer Group" id="Wxy-wO-YBx">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="QmM-ZR-cNK"/>
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="TVN-Hd-jnY"/>
+                    <navigationItem key="navigationItem" title="Inner Group" id="Wxy-wO-YBx">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="QmM-ZR-cNK">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="QDF-Kc-ZHT" id="hbV-3s-U9l"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="TVN-Hd-jnY">
+                            <connections>
+                                <action selector="nextButtonTapped:" destination="QDF-Kc-ZHT" id="qWy-TN-8Hp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nextButton" destination="TVN-Hd-jnY" id="Swx-Ky-faF"/>
+                        <outlet property="tableView" destination="6uo-gv-WzD" id="cni-g4-Adg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vlw-Bd-no0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-148" y="122.78860569715144"/>
+            <point key="canvasLocation" x="5430" y="123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zjX-LJ-cAy">
@@ -231,7 +262,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezT-1m-XfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1087.2" y="122.78860569715144"/>
+            <point key="canvasLocation" x="4473" y="123"/>
         </scene>
     </scenes>
 </document>

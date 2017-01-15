@@ -10,9 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDinnnerHead()
+        // check for chart id. if no chart id, then present the create chart view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // check for data in the ChartData
+        // if data, then display it
+        // if no data then present loading screan
+        // check for chartID
+        // if no chart id, then present create/download
+        // if chartID, then download it
+        // once downloaded and validated that there is data (same validation as step 1), dismiss loadingscreen
     }
     
     override func viewDidDisappear(_ animated: Bool) {
