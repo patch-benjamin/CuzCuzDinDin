@@ -18,9 +18,8 @@ class FirebaseController {
     static let outerGroupsUrl = ref.child("outerGroups").child(chartID!)
     static let innerGroupsUrl = ref.child("innerGroups").child(chartID!)
     static let lastUpdatedUrl = ref.child("lastUpdated").child(chartID!)
-    static let outerGroupsStartingIndexUrl = ref.child("outerGroupStartingIndex").child(uID!)
+    static let outerGroupsStartingIndexUrl = ref.child("outerGroupStartingIndex").child(chartID!)
     
-    static var uID: String? = nil
     static var chartID: String? {
         let id = ChartData.Chart.chartID
         return id == "" ? nil : id
@@ -118,35 +117,4 @@ class FirebaseController {
         outerGroupsStartingIndexUrl.setValue(startingIndex)
     }
     
-}
-
-
-
-extension FirebaseController {
-    
-    static let uidKey = "UIDKey"
-    
-    static func saveUID(uid: String) {
-        return UserDefaults.standard.set(uid, forKey: uidKey)
-    }
-    
-    static func loadUID() -> String? {
-        return UserDefaults.standard.string(forKey: uidKey)
-    }
-    
-    static func setupLoadUID() {
-        guard let uid = loadUID() else {
-            
-            FIRAuth.auth()?.signInAnonymously() { (user, error) in
-                guard let user = user else {
-                    // crash handling
-                    fatalError()
-                }
-                FirebaseController.saveUID(uid: user.uid)
-                uID = user.uid
-            }
-            return
-        }
-        uID = uid
-    }
 }
