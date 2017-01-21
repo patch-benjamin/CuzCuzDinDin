@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96D2833A8C2B70CF681113D9 /* Pods_DinDin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35AB7DE12111CA876E540A05 /* Pods_DinDin.framework */; };
+		AC0199A01E2D41470004FBD1 /* EditChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01999F1E2D41470004FBD1 /* EditChartTableViewCell.swift */; };
+		AC0199A21E2D48CF0004FBD1 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0199A11E2D48CF0004FBD1 /* ChartViewController.swift */; };
+		AC0199A41E2D4FE00004FBD1 /* AddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0199A31E2D4FE00004FBD1 /* AddTableViewCell.swift */; };
+		AC8CF1301E33C2A600C1A28C /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8CF12F1E33C2A600C1A28C /* FirebaseController.swift */; };
+		AC8CF1321E33D1D700C1A28C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC8CF1311E33D1D700C1A28C /* GoogleService-Info.plist */; };
+		ACA3A0E21E33E2DE0028D449 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3A0E11E33E2DE0028D449 /* DateExtension.swift */; };
 		ACC2FD951E2AAD9C00AEAF59 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD941E2AAD9C00AEAF59 /* SetupViewController.swift */; };
 		ACC2FD971E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD961E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift */; };
 		ACC2FD991E2ABF3B00AEAF59 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD981E2ABF3B00AEAF59 /* ChartData.swift */; };
-		ACC2FD9B1E2AC2BF00AEAF59 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD9A1E2AC2BF00AEAF59 /* FirebaseController.swift */; };
 		ACC2FD9D1E2AC80300AEAF59 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2FD9C1E2AC80300AEAF59 /* TextFieldTableViewCell.swift */; };
 		ACE1A80D1E28723E006C5004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A80C1E28723E006C5004 /* AppDelegate.swift */; };
 		ACE1A8141E28723E006C5004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE1A8131E28723E006C5004 /* Assets.xcassets */; };
@@ -39,10 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35AB7DE12111CA876E540A05 /* Pods_DinDin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DinDin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4B7343D58996A9AA796884 /* Pods-DinDin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DinDin/Pods-DinDin.debug.xcconfig"; sourceTree = "<group>"; };
+		74F60CEECA683AEB75FF8AAB /* Pods-DinDin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinDin.release.xcconfig"; path = "Pods/Target Support Files/Pods-DinDin/Pods-DinDin.release.xcconfig"; sourceTree = "<group>"; };
+		AC01999F1E2D41470004FBD1 /* EditChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditChartTableViewCell.swift; sourceTree = "<group>"; };
+		AC0199A11E2D48CF0004FBD1 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		AC0199A31E2D4FE00004FBD1 /* AddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewCell.swift; sourceTree = "<group>"; };
+		AC8CF12F1E33C2A600C1A28C /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseController.swift; path = ../FirebaseController.swift; sourceTree = "<group>"; };
+		AC8CF1311E33D1D700C1A28C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACA3A0E11E33E2DE0028D449 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		ACC2FD941E2AAD9C00AEAF59 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		ACC2FD961E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupGroupsTableViewController.swift; sourceTree = "<group>"; };
 		ACC2FD981E2ABF3B00AEAF59 /* ChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
-		ACC2FD9A1E2AC2BF00AEAF59 /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		ACC2FD9C1E2AC80300AEAF59 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		ACE1A8091E28723E006C5004 /* DinDin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinDin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE1A80C1E28723E006C5004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D2833A8C2B70CF681113D9 /* Pods_DinDin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,13 +99,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60E6BD98A7C05D12DB593AFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A4B7343D58996A9AA796884 /* Pods-DinDin.debug.xcconfig */,
+				74F60CEECA683AEB75FF8AAB /* Pods-DinDin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84671EF8DA750CC9C33E485D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35AB7DE12111CA876E540A05 /* Pods_DinDin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC01999E1E2D3E630004FBD1 /* Old way */ = {
+			isa = PBXGroup;
+			children = (
+				ACC2FD9C1E2AC80300AEAF59 /* TextFieldTableViewCell.swift */,
+				ACC2FD961E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift */,
+				ACC2FD941E2AAD9C00AEAF59 /* SetupViewController.swift */,
+				ACE1A83E1E288A74006C5004 /* ViewController.swift */,
+			);
+			name = "Old way";
+			sourceTree = "<group>";
+		};
 		ACE1A8001E28723D006C5004 = {
 			isa = PBXGroup;
 			children = (
+				AC8CF1311E33D1D700C1A28C /* GoogleService-Info.plist */,
 				ACE1A80B1E28723E006C5004 /* DinDin */,
 				ACE1A8201E28723E006C5004 /* DinDinTests */,
 				ACE1A82B1E28723E006C5004 /* DinDinUITests */,
 				ACE1A80A1E28723E006C5004 /* Products */,
+				60E6BD98A7C05D12DB593AFC /* Pods */,
+				84671EF8DA750CC9C33E485D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,13 +153,14 @@
 		ACE1A80B1E28723E006C5004 /* DinDin */ = {
 			isa = PBXGroup;
 			children = (
+				AC8CF12F1E33C2A600C1A28C /* FirebaseController.swift */,
+				ACA3A0E11E33E2DE0028D449 /* DateExtension.swift */,
 				ACE1A83A1E287324006C5004 /* Main.storyboard */,
+				AC0199A31E2D4FE00004FBD1 /* AddTableViewCell.swift */,
+				AC0199A11E2D48CF0004FBD1 /* ChartViewController.swift */,
+				AC01999F1E2D41470004FBD1 /* EditChartTableViewCell.swift */,
 				ACC2FD981E2ABF3B00AEAF59 /* ChartData.swift */,
-				ACC2FD9A1E2AC2BF00AEAF59 /* FirebaseController.swift */,
-				ACC2FD9C1E2AC80300AEAF59 /* TextFieldTableViewCell.swift */,
-				ACC2FD961E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift */,
-				ACC2FD941E2AAD9C00AEAF59 /* SetupViewController.swift */,
-				ACE1A83E1E288A74006C5004 /* ViewController.swift */,
+				AC01999E1E2D3E630004FBD1 /* Old way */,
 				ACE1A80C1E28723E006C5004 /* AppDelegate.swift */,
 				ACE1A8131E28723E006C5004 /* Assets.xcassets */,
 				ACE1A8151E28723E006C5004 /* LaunchScreen.storyboard */,
@@ -147,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACE1A8311E28723E006C5004 /* Build configuration list for PBXNativeTarget "DinDin" */;
 			buildPhases = (
+				DD2421CDDF24AE3279C044CE /* [CP] Check Pods Manifest.lock */,
 				ACE1A8051E28723E006C5004 /* Sources */,
 				ACE1A8061E28723E006C5004 /* Frameworks */,
 				ACE1A8071E28723E006C5004 /* Resources */,
+				885F96599A73EF23E7772DBB /* [CP] Embed Pods Frameworks */,
+				1FBFF1883703F04DA623BCE7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACE1A83C1E287324006C5004 /* Main.storyboard in Resources */,
+				AC8CF1321E33D1D700C1A28C /* GoogleService-Info.plist in Resources */,
 				ACE1A8171E28723E006C5004 /* LaunchScreen.storyboard in Resources */,
 				ACE1A8141E28723E006C5004 /* Assets.xcassets in Resources */,
 			);
@@ -272,15 +323,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FBFF1883703F04DA623BCE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinDin/Pods-DinDin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		885F96599A73EF23E7772DBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinDin/Pods-DinDin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD2421CDDF24AE3279C044CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACE1A8051E28723E006C5004 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACC2FD9B1E2AC2BF00AEAF59 /* FirebaseController.swift in Sources */,
+				AC8CF1301E33C2A600C1A28C /* FirebaseController.swift in Sources */,
 				ACE1A83F1E288A74006C5004 /* ViewController.swift in Sources */,
+				AC0199A01E2D41470004FBD1 /* EditChartTableViewCell.swift in Sources */,
 				ACC2FD9D1E2AC80300AEAF59 /* TextFieldTableViewCell.swift in Sources */,
 				ACC2FD991E2ABF3B00AEAF59 /* ChartData.swift in Sources */,
+				AC0199A41E2D4FE00004FBD1 /* AddTableViewCell.swift in Sources */,
+				ACA3A0E21E33E2DE0028D449 /* DateExtension.swift in Sources */,
+				AC0199A21E2D48CF0004FBD1 /* ChartViewController.swift in Sources */,
 				ACC2FD951E2AAD9C00AEAF59 /* SetupViewController.swift in Sources */,
 				ACE1A80D1E28723E006C5004 /* AppDelegate.swift in Sources */,
 				ACC2FD971E2AADDB00AEAF59 /* SetupGroupsTableViewController.swift in Sources */,
@@ -425,6 +528,7 @@
 		};
 		ACE1A8321E28723E006C5004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4B7343D58996A9AA796884 /* Pods-DinDin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9D3AY7C5NW;
@@ -438,6 +542,7 @@
 		};
 		ACE1A8331E28723E006C5004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F60CEECA683AEB75FF8AAB /* Pods-DinDin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9D3AY7C5NW;
@@ -445,6 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PatchWork.DinDin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
